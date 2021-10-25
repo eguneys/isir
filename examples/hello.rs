@@ -18,7 +18,6 @@ async fn run() {
 
     let mut renderer = Renderer::new(&window, size).await;
 
-
     event_loop.run(move |event, _, control_flow| match event {
         Event::WindowEvent { event, .. } => match event {
             WindowEvent::CloseRequested => {
